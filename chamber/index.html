@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Port Harcourt Chamber of Commerce</title>
+
+    <meta name="description" content="The Port Harcourt Chamber of Commerce supports local businesses through networking, events, and economic development across Rivers State.">
+    <meta name="author" content="Madokuboba Charles Dokubo">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#0F2A44">
+
+    <!-- Social Media Meta -->
+    <meta property="og:title" content="Port Harcourt Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://madokscharles.github.io/wdd231/chamber/images/social-preview.png">
+    <meta property="og:url" content="https://madokscharles.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Explore verified businesses and organizations within Port Harcourt through the official Chamber of Commerce directory.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/weather.js"></script>
+    <script defer src="scripts/spotlight.js"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="header">
+        <div class="image-logo">
+            <a href="index.html">
+                <img src="images/phcc-logo.png" alt="Port Harcourt Chamber of Commerce logo" width="60">
+            </a>
+        </div>
+        <button id="menubutton" aria-label="Menu"></button>
+    </div>
+
+    <nav id="animatemenu">
+        <ul class="navigation">
+            <li><a href="https://madokscharles.github.io/wdd231/chamber" class="active-menu-link">Home</a></li>
+            <li><a href="https://madokscharles.github.io/wdd231/chamber/directory.html" class="active">Directory</a></li>
+            <li><a href="https://madokscharles.github.io/wdd231/chamber/join.html">Join here</a></li>
+            <li><a href="https://madokscharles.github.io/wdd231/chamber/discover.html">Explore</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HERO SECTION -->
+    <section class="hero-container">
+        <div class="hero">
+            <div class="hero-text">
+                <h2>Connecting Businesses. Empowering Growth.</h2>
+                <p>
+                    The Port Harcourt Chamber of Commerce supports entrepreneurs, companies,
+                    and organizations by fostering collaboration, promoting local commerce,
+                    and strengthening the Rivers State economy.
+                </p>
+                <a href="join.html" class="hero-btn">Join the Chamber</a>
+            </div>
+
+            <img 
+                src="images/social-preview.png" 
+                alt="Port Harcourt city skyline representing business growth"
+                class="hero-image"
+                loading="lazy">
+        </div>
+    </section>
+
+    <!-- EVENTS & WEATHER -->
+    <section class="main-container">
+        <div class="weather-container">
+
+            <div class="card-events">
+                <h2>Upcoming Events</h2>
+                <h3 id="event-title">Business Networking Mixer</h3>
+                <p id="event-description">An opportunity for local businesses to connect and collaborate.</p>
+                <p id="event-date">Date: To Be Announced</p>
+            </div>
+
+            <div class="card-weather">
+                <h2>Current Weather</h2>
+                <h3 id="town">Port Harcourt</h3>
+                <img id="weather-icon" src="images/weather-placeholder.webp" alt="Weather icon" width="90" loading="lazy">
+                <p id="description"></p>
+                <p id="temperature"></p>
+            </div>
+
+            <div class="card-forecast">
+                <h2>3-Day Forecast</h2>
+                <h3 id="forecast-town">Port Harcourt</h3>
+
+                <p>Today: <span id="forecast-temp-today"></span></p>
+                <p id="day-name-next"><span></span> <span id="forecast-temp-next"></span></p>
+                <p id="day-name-after"><span></span> <span id="forecast-temp-after"></span></p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MEMBER SPOTLIGHT -->
+    <section class="spotlight-div">
+        <h2>Member Spotlight</h2>
+        <div id="spotlight-container"></div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-links">
+            <div class="footer-section">
+                <h4>About the Chamber</h4>
+                <ul>
+                    <li>Supporting Local Businesses</li>
+                    <li>Economic Development</li>
+                    <li>Business Advocacy</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact Information</h4>
+                <ul>
+                    <li>Port Harcourt, Rivers State</li>
+                    <li>Email: info@phchamber.org</li>
+                    <li>Phone: +234 800 000 0000</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="footer-separator">
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Madoks Charles | WDD 231</p>
+            <p id="lastModifiedDate">Last Modified:</p>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>

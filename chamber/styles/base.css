@@ -1,0 +1,355 @@
+
+:root {
+    --primary-color: #0F2A44;   
+    --secondary-color: #1E7F5C; 
+    --accent1-color: #D4AF37;  
+    --accent2-color: #5FB3A2;   
+    --accent3-color: #0B1C2D;    
+
+    --background-color: #F7F9FC;
+    --card-background: #FFFFFF;
+    --text-dark: #1F2933;
+    --text-muted: #6B7280;
+    --border-color: #E5E7EB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-dark);
+    overflow-x: hidden;
+}
+
+/* ===============================
+   HEADER
+   =============================== */
+
+header {
+    background-color: var(--card-background);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(11, 28, 45, 0.25);
+}
+
+.image-logo img {
+    width: 9rem;
+    margin: .3em 1em;
+}
+
+/* ===============================
+   NAVIGATION
+   =============================== */
+
+nav {
+    background-color: var(--primary-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    display: block;
+    padding: 1.4rem 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent1-color);
+}
+
+nav a.active-menu-link {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/* ===============================
+   HAMBURGER MENU
+   =============================== */
+
+#menubutton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menubutton::before {
+    content: "\2630";
+}
+
+#menubutton.open::before {
+    content: "✕";
+    font-weight: 700;
+}
+
+@media (max-width: 999px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav.open ul {
+        display: flex;
+    }
+}
+
+@media (min-width: 1000px) {
+    #menubutton {
+        display: none;
+    }
+}
+
+/* ===============================
+   HERO SECTION
+   =============================== */
+
+.hero {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 2em 1em;
+}
+
+.hero-text {
+    max-width: 90%;
+    margin: 2em auto;
+}
+
+.hero-text h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===============================
+   MAIN HEADINGS
+   =============================== */
+
+h1 {
+    text-align: center;
+    margin: 4em 0 1em;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+/* ===============================
+   EVENTS & WEATHER CARDS
+   =============================== */
+
+.main-container {
+    background-color: var(--background-color);
+    padding: 2em 0;
+}
+
+.weather-container {
+    width: 100%;
+}
+
+.card-events,
+.card-weather,
+.card-forecast {
+    background-color: rgba(30, 127, 92, 0.12);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    text-align: center;
+    margin: 2em 1em;
+}
+
+.card-events h2,
+.card-weather h2,
+.card-forecast h2 {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-radius: 12px 12px 0 0;
+    padding: .5em;
+    font-weight: 500;
+}
+
+.card-events h3,
+.card-weather h3,
+.card-forecast h3 {
+    color: var(--primary-color);
+    margin-top: 1rem;
+}
+
+.card-weather #temperature {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+/* ===============================
+   DIRECTORY
+   =============================== */
+
+#directory-container {
+    width: 100%;
+}
+
+.member-card {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+}
+
+.member-card img {
+    width: 90px;
+    margin-bottom: 1rem;
+}
+
+/* ===============================
+   SPOTLIGHT
+   =============================== */
+
+.spotlight-div h2 {
+    text-align: center;
+    margin: 2em 0 1em;
+    color: var(--primary-color);
+}
+
+.spotlight-card {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+/* ===============================
+   FORMS
+   =============================== */
+
+.form-container {
+    max-width: 90%;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: var(--card-background);
+    border-radius: 45px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+label {
+    font-size: .8rem;
+    color: var(--primary-color);
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=date],
+select,
+textarea {
+    width: 100%;
+    padding: .6rem;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 1rem;
+}
+
+/* ===============================
+   BUTTONS
+   =============================== */
+
+button,
+input[type=submit] {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    border: none;
+    padding: .8rem 1.5rem;
+    cursor: pointer;
+    font-size: .9rem;
+}
+
+button:hover,
+input[type=submit]:hover {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+}
+
+/* ===============================
+   FOOTER
+   =============================== */
+
+.footer {
+    background: linear-gradient(
+        to top,
+        var(--accent3-color),
+        var(--primary-color)
+    );
+    color: #ffffff;
+    padding: 3em 0 1em;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--accent1-color);
+}
+
+@media (max-width: 768px) {
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+    }
+}

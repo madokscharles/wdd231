@@ -1,0 +1,269 @@
+/* ===============================
+   LARGE SCREENS (≥1000px)
+   =============================== */
+
+:root {
+    --primary-color: #0F2A44;    /* Deep navy */
+    --secondary-color: #1E7F5C;  /* Rich green */
+    --accent1-color: #D4AF37;    /* Gold */
+    --accent2-color: #5FB3A2;    /* Soft teal */
+    --accent3-color: #0B1C2D;    /* Very dark navy */
+
+    --background-color: #F7F9FC;
+    --card-background: #FFFFFF;
+    --text-dark: #1F2933;
+    --text-muted: #6B7280;
+    --border-color: #E5E7EB;
+}
+
+@media (min-width: 1000px) {
+
+    /* ===============================
+       HEADER & NAV
+       =============================== */
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: var(--card-background);
+        box-shadow: 0 4px 20px rgba(11, 28, 45, 0.4);
+    }
+
+    nav {
+        background-color: transparent;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .navigation-links a {
+        color: var(--primary-color);
+        font-weight: 700;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .navigation-links a:hover {
+        color: var(--secondary-color);
+    }
+
+    .navigation-links a.active-menu-link {
+        text-decoration: underline;
+        text-underline-offset: 6px;
+    }
+
+    /* ===============================
+       HERO SECTION
+       =============================== */
+
+    .hero-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6em 4em;
+    }
+
+    .hero-text {
+        max-width: 50%;
+    }
+
+    .hero-text h2 {
+        color: var(--primary-color);
+        font-size: 2.2rem;
+    }
+
+    .hero-text p {
+        color: var(--text-muted);
+        font-size: 1rem;
+    }
+
+    .hero-btn {
+        background-color: var(--secondary-color);
+        color: #ffffff;
+        font-size: 1.1rem;
+    }
+
+    .hero-btn:hover {
+        background-color: var(--primary-color);
+        color: var(--accent1-color);
+    }
+
+    .hero-image {
+        max-width: 45%;
+        border-radius: 12px;
+    }
+
+    /* ===============================
+       EVENTS & WEATHER
+       =============================== */
+
+    .weather-container {
+        display: flex;
+        gap: 1.5em;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .card-events,
+    .card-weather,
+    .card-forecast {
+        background-color: rgba(30, 127, 92, 0.12);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        height: 300px;
+    }
+
+    .card-events {
+        width: 50%;
+        text-align: left;
+    }
+
+    .card-weather,
+    .card-forecast {
+        width: 25%;
+    }
+
+    .card-events h2,
+    .card-weather h2,
+    .card-forecast h2 {
+        background-color: var(--primary-color);
+        color: #ffffff;
+    }
+
+    /* ===============================
+       DIRECTORY
+       =============================== */
+
+    #directory-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .menu button {
+        background-color: var(--primary-color);
+        color: #ffffff;
+        border: none;
+        padding: .8rem 3rem;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .menu button:hover {
+        background-color: var(--secondary-color);
+        color: var(--accent1-color);
+    }
+
+    /* ===============================
+       SPOTLIGHT
+       =============================== */
+
+    #spotlight-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .spotlight-card {
+        background-color: var(--card-background);
+        border: 1px solid var(--border-color);
+        border-radius: 20px;
+        padding: 2rem;
+    }
+
+    /* ===============================
+       JOIN PAGE
+       =============================== */
+
+    .join-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: flex-start;
+    }
+
+    .join-layout h2 {
+        color: var(--primary-color);
+    }
+
+    .form-container {
+        border: 1px solid var(--border-color);
+        background-color: var(--card-background);
+    }
+
+    .membership-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .membership-card {
+        background-color: rgba(30, 127, 92, 0.12);
+        border: 1px solid var(--border-color);
+        border-radius: 20px;
+    }
+
+    /* ===============================
+       DISCOVERY PAGE
+       =============================== */
+
+    .discovery-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        background-color: var(--background-color);
+    }
+
+    .discovery-events,
+    .discovery-webinars,
+    .discovery-statistics {
+        background-color: rgba(30, 127, 92, 0.12);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+    }
+
+    .discovery-events h2,
+    .discovery-webinars h2,
+    .discovery-statistics h2 {
+        background-color: var(--primary-color);
+        color: #ffffff;
+    }
+
+    /* ===============================
+       PHOTOS
+       =============================== */
+
+    #photos-container {
+        width: 600px;
+        margin: 0 auto;
+        display: grid;
+        gap: 4rem;
+    }
+
+    #photos-container img {
+        border-radius: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    #photos-container img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+    }
+}

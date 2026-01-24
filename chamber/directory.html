@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Business Directory | Port Harcourt Chamber of Commerce</title>
+
+    <meta name="description" content="The Port Harcourt Chamber of Commerce directory connects local businesses, promotes economic growth and supports networking opportunities across Rivers State.">
+    <meta name="author" content="Madokuboba Charles Dokubo">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- Social Media Meta -->
+    <meta property="og:title" content="Port Harcourt Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://madokscharles.github.io/wdd231/chamber/images/social-preview.webp">
+    <meta property="og:url" content="https://madokscharles.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Explore verified businesses and organizations within Port Harcourt through the official Chamber of Commerce directory.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/directory.js"></script>
+</head>
+
+<body>
+<header>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/phcc-logo.png" alt="Port Harcourt Chamber of Commerce Logo" width="60">
+            </a>
+        </div>
+
+        <button id="menuButton" aria-label="Toggle Navigation"></button>
+    </div>
+
+    <nav id="primaryNav">
+        <ul class="navigation">
+            <li><a href="https://madokscharles.github.io/wdd231/chamber">Home</a></li>
+            <li><a href="https://madokscharles.github.io/wdd231/chamber/directory.html" class="active">Directory</a></li>
+            <li><a href="https://madokscharles.github.io/wdd231/chamber/join.html">Join here</a></li>
+            <li><a href="https://madokscharles.github.io/wdd231/chamber/discover.html">Explore</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Business Directory</h1>
+
+    <div class="view-toggle">
+        <button id="gridView">⬛ Grid</button>
+        <button id="listView">📋 List</button>
+    </div>
+
+    <hr>
+
+    <section id="directory-container" class="grid-view">
+        <!-- Member cards generated dynamically from members.json -->
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <section>
+            <h3>Contact Information</h3>
+            <p>Port Harcourt, Rivers State, Nigeria</p>
+            <p>Email: info@phchamber.ng</p>
+            <p>Phone: +234 700 000 0001</p>
+        </section>
+
+        <section>
+            <p>&copy; <span id="currentYear"></span> Madokuboba Charles Dokubo, Nigeria</p>
+            <p>WDD 231 – Web Frontend Development</p>
+            <p id="lastModified"></p>
+        </section>
+    </div>
+</footer>
+
+</body>
+</html>
