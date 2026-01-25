@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Directory | Port Harcourt Chamber of Commerce</title>
+    <title>Discover | Port Harcourt Chamber of Commerce</title>
 
-    <meta name="description" content="Browse verified businesses and organizations that are members of the Port Harcourt Chamber of Commerce.">
+    <meta name="description" content="Discover business insights, local highlights, and economic opportunities within Port Harcourt and Rivers State.">
     <meta name="author" content="Madokuboba Charles Dokubo">
 
     <link rel="stylesheet" href="styles/base.css">
@@ -14,18 +14,18 @@
 
     <link rel="icon" href="images/favicon.ico">
 
-    <meta property="og:title" content="Business Directory | Port Harcourt Chamber of Commerce">
+    <meta property="og:title" content="Discover Port Harcourt">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://madokscharles.github.io/wdd231/chamber/images/social-preview.png">
-    <meta property="og:url" content="https://madokscharles.github.io/wdd231/chamber/directory.html">
-    <meta property="og:description" content="Explore businesses that are members of the Port Harcourt Chamber of Commerce.">
+    <meta property="og:url" content="https://madokscharles.github.io/wdd231/chamber/discover.html">
+    <meta property="og:description" content="Explore the business environment, events, and growth opportunities in Port Harcourt.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <script defer src="scripts/getdates.js"></script>
-    <script defer src="scripts/directory.js"></script>
+    <script defer src="scripts/scrollanimation.js"></script>
 </head>
 
 <body>
@@ -43,26 +43,65 @@
     <nav id="animatemenu">
         <ul class="navigation-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="directory.html" class="active-menu-link">Directory</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
-            <li><a href="discover.html">Explore</a></li>
+            <li><a href="discover.html" class="active-menu-link">Explore</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
-    <h1>Business Directory</h1>
+    <section class="discovery-container">
 
-    <div class="menu view-toggle">
-        <button id="grid">⏹️ Grid</button>
-        <button id="list">📄 List</button>
-    </div>
+    <section class="discovery-cards-container">
+        <h1>Discover Port Harcourt</h1>
 
-    <hr class="header-separator">
+        <div class="discovery-events">
+            <h2>Local Events</h2>
+            <h3>Business & Community Activities</h3>
+            <p>
+                Port Harcourt hosts a wide range of business networking sessions, trade fairs,
+                and community-driven economic events that support entrepreneurship and growth.
+            </p>
+        </div>
 
-    <section id="directory-container" class="grid">
-        <!-- Member cards injected by directory.js -->
+        <div class="discovery-webinars">
+            <h2>Workshops & Training</h2>
+            <h3>Skills & Capacity Building</h3>
+            <p>
+                Entrepreneurs benefit from training programs focused on business registration,
+                funding access, digital tools, and sustainable growth strategies.
+            </p>
+        </div>
+
+        <div class="discovery-statistics">
+            <h2>Economic Overview</h2>
+            <h3>Rivers State at a Glance</h3>
+            <p>
+                Port Harcourt is a major economic hub for oil & gas, logistics, SMEs,
+                and emerging technology-driven enterprises in southern Nigeria.
+            </p>
+        </div>
     </section>
+
+    <section class="photos-div">
+        <h2>City Highlights</h2>
+
+        <div id="photos-container">
+            <div class="photo-card">
+                <img src="images/social-preview1.png" alt="Port Harcourt city skyline">
+            </div>
+            <div class="photo-card">
+                <img src="images/social-preview.png" alt="Business district in Port Harcourt">
+            </div>
+            <div class="photo-card">
+                <img src="images/market.jpg" alt="Local commerce and markets">
+            </div>
+        </div>
+    </section>
+
+    </section>
+
 </main>
 
 <footer class="footer">

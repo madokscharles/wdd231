@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Port Harcourt Tech Hub",
+    "address": "GRA Phase 2, Port Harcourt, Rivers State",
+    "phone_number": "+234 801 234 5678",
+    "website_url": "https://phtechhub.ng",
+    "image": "phcc-logo.png",
+    "membership_level": 4
+  },
+  {
+    "name": "Rivers Agro Services",
+    "address": "Eleme Junction, Port Harcourt",
+    "phone_number": "+234 802 345 6789",
+    "website_url": "https://riversagro.com",
+    "image": "phcc-logo.png",
+    "membership_level": 3
+  },
+  {
+    "name": "Niger Delta Creative Studio",
+    "address": "Old GRA, Port Harcourt",
+    "phone_number": "+234 803 456 7890",
+    "website_url": "https://ndcreativestudio.ng",
+    "image": "phcc-logo.png",
+    "membership_level": 2
+  },
+  {
+    "name": "Unity Microfinance Bank",
+    "address": "D-Line, Port Harcourt",
+    "phone_number": "+234 804 567 8901",
+    "website_url": "https://unitymfb.ng",
+    "image": "phcc-logo.png",
+    "membership_level": 1
+  },
+  {
+    "name": "Clean Rivers Initiative",
+    "address": "Rumuola, Port Harcourt",
+    "phone_number": "+234 805 678 9012",
+    "website_url": "https://cleanriversinitiative.org",
+    "image": "phcc-logo.png",
+    "membership_level": 0
+  },
+  {
+    "name": "Port Harcourt Medical Diagnostics",
+    "address": "Ada George Road, Port Harcourt",
+    "phone_number": "+234 806 789 0123",
+    "website_url": "https://phmeddiagnostics.com",
+    "image": "phcc-logo.png",
+    "membership_level": 3
+  },
+  {
+    "name": "South-South Logistics Ltd",
+    "address": "Trans-Amadi Industrial Layout",
+    "phone_number": "+234 807 890 1234",
+    "website_url": "https://southsouthlogistics.ng",
+    "image": "phcc-logo.png",
+    "membership_level": 4
+  }
+]
