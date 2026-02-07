@@ -70,7 +70,13 @@
                 <input id="last" type="text" name="last" required autocomplete="family-name" title="Enter your last name">
 
                 <label for="title">Title</label>
-                <input id="title" type="text" name="title" required autocomplete="organization-title" placeholder="e.g. Operations Manager" title="Enter your job title or role">
+                <!--input id="title" type="text" name="title" required autocomplete="organization-title" placeholder="e.g. Operations Manager" title="Enter your job title or role"-->
+                <input type="text" name="title" required 
+                    title="Only letters, spaces, and hyphens allowed. Minimum 7 characters."
+                    pattern="[A-Za-z\\s\\-]{7,}"
+                    autocomplete="organization-title"
+                    placeholder="e.g. Operations Manager">
+
 
                 <label for="email">Email</label>
                 <input id="email" type="email" name="email" required autocomplete="email" placeholder="name@example.com" title="Enter a valid email address">
