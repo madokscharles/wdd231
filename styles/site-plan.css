@@ -1,0 +1,82 @@
+/* ======================
+   KONOMA COLOR SCHEME
+   Primary: #4F46E5
+   Background: #F3F4F6
+   Text: #111827
+====================== */
+
+body{
+    margin:0;
+    background:#F3F4F6;
+    color:#111827;
+    font-family:'Inter', sans-serif;
+    line-height:1.6;
+}
+
+header{
+    background:#4F46E5;
+    color:white;
+    text-align:center;
+    padding:1rem;
+}
+
+main{
+    max-width:900px;
+    margin:auto;
+    padding:1rem;
+}
+
+h1,h2,h3{
+    font-family:'Poppins', sans-serif;
+}
+
+section{
+    margin-bottom:2rem;
+}
+
+nav a{
+    margin-right:1rem;
+    text-decoration:none;
+    color:#111827;
+    font-weight:500;
+}
+
+/* =============
+   WIREFRAME
+================ */
+
+.wireframe{
+    border:2px dashed #4F46E5;
+    padding:1rem;
+    margin-top:1rem;
+    background:white;
+}
+
+.box{
+    border:2px solid #111827;
+    padding:12px;
+    margin:8px 0;
+    text-align:center;
+    background:#F3F4F6;
+}
+
+.full{
+    width:100%;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+
+.mobile .box{
+    width:100%;
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:1rem;
+}
