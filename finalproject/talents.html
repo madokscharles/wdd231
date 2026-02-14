@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Talents | Konoma</title>
+
+    <meta name="description" content="Browse skilled professionals on Konoma. Compare ratings, services, and contact trusted local experts.">
+    <meta name="author" content="Madokuboba Charles Dokubo">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script type="module" src="scripts/talents.js"></script>
+    <script type="module" src="scripts/modal.js"></script>
+
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="topbar">
+            <a href="index.html" class="logo">Konoma</a>
+            <button id="menuBtn">☰</button>
+        </div>
+
+        <nav id="mainNav">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="talents.html" class="active">Talents</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <h1>Available Talents</h1>
+
+        <div id="talentsGrid" class="grid"></div>
+
+    </main>
+
+    <dialog id="talentModal"></dialog>
+
+    <footer>
+        <p>©2026 Konoma | Madokuboba Charles Dokubo</p>
+        <p><a href="attributions.html">Attributions</a></p>
+    </footer>
+
+</body>
+</html>

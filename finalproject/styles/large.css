@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+  nav {
+    display: block !important;
+  }
+
+  #menuBtn {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .hero {
+    padding: 4rem 2rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}

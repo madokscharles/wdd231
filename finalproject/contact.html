@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Konoma</title>
+
+    <meta name="description" content="Contact Konoma or request a skilled professional in your area.">
+    <meta name="author" content="Madokuboba Charles Dokubo">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="topbar">
+            <a href="index.html" class="logo">Konoma</a>
+            <button id="menuBtn">☰</button>
+        </div>
+
+        <nav id="mainNav">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="talents.html">Talents</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <h1>Request a Professional</h1>
+
+        <form method="get" action="thankyou.html" class="form">
+
+            <label>
+            Full Name
+            <input type="text" name="name" required title="Enter your full name">
+            </label>
+
+            <label>
+            Email
+            <input type="email" name="email" required title="Enter a valid email" placeholder="name@example.com">
+            </label>
+
+            <label>
+            Service Needed
+            <input type="text" name="service" required title="Enter service needed">
+            </label>
+
+            <label>
+            Details
+            <textarea name="details" title="Enter request details"></textarea>
+            </label>
+
+            <button type="submit" class="btn">Submit Request</button>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>©2026 Konoma | Madokuboba Charles Dokubo</p>
+        <p><a href="attributions.html">Attributions</a></p>
+    </footer>
+
+</body>
+</html>

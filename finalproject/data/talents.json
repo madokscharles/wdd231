@@ -1,0 +1,17 @@
+[
+  {"name":"John Electric","category":"Electrician","rating":4.8,"location":"Port Harcourt","image":"talent1.jpg"},
+  {"name":"Sarah CleanPro","category":"Cleaner","rating":4.7,"location":"Obio-Akpor","image":"talent2.jpg"},
+  {"name":"Mike AutoFix","category":"Mechanic","rating":4.6,"location":"Rumuola","image":"talent3.jpg"},
+  {"name":"Grace Tutor","category":"Tutor","rating":4.9,"location":"Eliozu","image":"talent4.jpeg"},
+  {"name":"Bright Tech","category":"IT Support","rating":4.5,"location":"GRA","image":"talent5.jpeg"},
+  {"name":"Queen Beauty","category":"Makeup Artist","rating":4.8,"location":"Ada George","image":"talent6.jpeg"},
+  {"name":"Swift Plumber","category":"Plumber","rating":4.6,"location":"Choba","image":"talent7.jpeg"},
+  {"name":"Elite Painter","category":"Painter","rating":4.4,"location":"Oyigbo","image":"konoma-logo.jpg"},
+  {"name":"Smart Tutor","category":"Tutor","rating":4.7,"location":"Rukpokwu","image":"category-tutor.jpeg"},
+  {"name":"FixMaster","category":"Handyman","rating":4.5,"location":"Borokiri","image":"talent10.jpg"},
+  {"name":"Clean Experts","category":"Cleaner","rating":4.6,"location":"Trans Amadi","image":"category-cleaner.jpg"},
+  {"name":"Power Electric","category":"Electrician","rating":4.7,"location":"Rumuokoro","image":"category-electrician.jpg"},
+  {"name":"Auto King","category":"Mechanic","rating":4.5,"location":"Mile 3","image":"talent13.jpg"},
+  {"name":"Tutor Hub","category":"Tutor","rating":4.8,"location":"Diobu","image":"talent14.jpeg"},
+  {"name":"Beauty Glow","category":"Makeup Artist","rating":4.9,"location":"GRA Phase 2","image":"talent15.jpeg"}
+]

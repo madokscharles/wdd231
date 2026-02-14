@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thank You | Konoma</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta name="description" content="Your request has been received by Konoma."> 
+    <meta name="author" content="Madokuboba Charles Dokubo">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+
+<body>
+
+    <main class="container thankyou">
+
+        <div class="thankyou-card"> 
+            <h1>Request Received</h1> 
+            <p class="thankyou-sub"> Thank you for using <strong>Konoma</strong>. We will connect you with a trusted professional shortly. </p> <div id="results"></div> 
+            <a href="index.html" class="btn return-btn">← Back to Home</a> 
+        </div>
+
+    </main>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const results = document.querySelector("#results");
+
+results.innerHTML = `
+  <p><strong>Name:</strong> ${params.get("name")}</p>
+  <p><strong>Email:</strong> ${params.get("email")}</p>
+  <p><strong>Service:</strong> ${params.get("service")}</p>
+  <p><strong>Details:</strong> ${params.get("details")}</p>
+`;
+</script>
+
+</body>
+</html>
