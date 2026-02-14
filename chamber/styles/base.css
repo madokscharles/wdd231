@@ -422,7 +422,7 @@ form input[type="submit"]:hover {
     gap: 2rem;
 }
 
-.discovery-cards-container h1 {
+.discovery-container > h1 {
     text-align: left;
     margin-bottom: 1rem;
 }
